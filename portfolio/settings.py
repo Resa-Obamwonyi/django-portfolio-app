@@ -26,8 +26,7 @@ SECRET_KEY = '0ju$i9(@w-ww$_l9&1rq-m_ozy0fp*-hfnqgmix8_6o)y9y(@a'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['resa-django.herokuapp.com', '127.0.0.1']
-
+ALLOWED_HOSTS = ['resa-django.herokuapp.com','0.0.0.0', '127.0.0.1']
 
 # Application definition
 
