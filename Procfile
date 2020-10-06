@@ -1,1 +1,1 @@
-web: gunicorn --pythonpath django-portfolio-app/venv portfolio.wsgi --log-file -
+web: gunicorn portfolio.wsgi --log-file -
