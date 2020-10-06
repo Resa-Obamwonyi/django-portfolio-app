@@ -10,7 +10,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 from pathlib import Path
 import os
 import django_heroku
-from decouple import config
+from decouple import config,Csv
 from .database import generate_database
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -26,7 +26,8 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG')
 
-ALLOWED_HOSTS = ['*']
+# use env and config with heroku link and localhost.
+ALLOWED_HOSTS = config('ALLOWED_HOST', cast=Csv)
 
 # Application definition
 
