@@ -1,6 +1,10 @@
+db.sqlite3
 bin
-.env
 lib
 include
 pyvenv.cfg
+.env
+
+
+
 
